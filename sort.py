@@ -1,5 +1,21 @@
-list1=[2,15,11]
-list2=[14,13,16]
-list3=list1+list2
-list3.sort(reverse=False)
-print(list3)
+#sort a an integer array with size 10
+    
+arr = [5, 2, 8, 7, 1,11,9,12,41,85]  
+temp = 0  
+        
+print("Elements of original array: ")  
+for i in range(0, len(arr)):    
+    print(arr[i], end=" ")
+         
+for i in range(0, len(arr)):    
+    for j in range(i+1, len(arr)):    
+        if(arr[i] > arr[j]):    
+            temp = arr[i]   
+            arr[i] = arr[j]    
+            arr[j] = temp   
+     
+print()       
+    
+print("Elements of array sorted in ascending order: ")   
+for i in range(0, len(arr)):    
+    print(arr[i], end=" ") 
